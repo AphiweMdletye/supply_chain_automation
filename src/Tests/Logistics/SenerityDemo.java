@@ -7,6 +7,7 @@ public class SenerityDemo
     @Test
     public void printTestData()
     {
+        ReadExcelFile();
         System.out.print("This is the dummy test case 1");
     }
 

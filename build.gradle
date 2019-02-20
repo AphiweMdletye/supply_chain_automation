@@ -34,11 +34,11 @@ version = '1.0'
 sourceSets {
     test {
         java {
-            srcDir 'src/Tests'
+            srcDir '/src/Tests/Logistics'
         }
-//        resources {
-//            srcDir 'src/Resources'
-//        }
+        java {
+            srcDir '/src/Tests/SupplyChain'
+        }
     }
 
 }
@@ -80,6 +80,10 @@ dependencies {
     compile group: 'net.serenity-bdd', name: 'serenity-reports', version: '2.0.40'
     compile group: 'net.serenity-bdd', name: 'serenity-rest-assured', version: '2.0.40'
     compile group: 'net.serenity-bdd', name: 'serenity-report-resources', version: '2.0.40'
+    
+    compile group: 'org.apache.poi', name: 'poi', version: '4.0.1'
+    compile group: 'org.apache.poi', name: 'poi-ooxml-schemas', version: '4.0.1'
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version: '4.0.1'
 
     testCompile 'org.assertj:assertj-core:3.4+'
     testCompile 'org.slf4j:slf4j-simple:1.7+'

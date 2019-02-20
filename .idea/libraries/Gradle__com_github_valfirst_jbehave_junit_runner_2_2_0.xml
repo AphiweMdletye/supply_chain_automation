@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.valfirst:jbehave-junit-runner:2.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.valfirst/jbehave-junit-runner/2.2.0/e4b12ca0ab477510838d449049f9c4cd37779129/jbehave-junit-runner-2.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.valfirst/jbehave-junit-runner/2.2.0/4fc0cc49b7d0391dd0aaa9827bb10242ceeac271/jbehave-junit-runner-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
