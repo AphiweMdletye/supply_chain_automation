@@ -3,6 +3,8 @@ buildscript {
         maven {
             url "https://plugins.gradle.org/m2/"
         }
+        mavenLocal()
+        jcenter()
     }
     dependencies {
         classpath "io.qameta.allure:allure-gradle:2.5"
@@ -32,15 +34,19 @@ targetCompatibility = 1.8
 version = '1.0'
 
 sourceSets {
-    test {
+    main {
         java {
-            srcDir '/src/Tests/Logistics'
-        }
-        java {
-            srcDir '/src/Tests/SupplyChain'
+            srcDirs = ["src"]
         }
     }
-
+    test {
+        java {
+            srcDir 'src/test/java/Tests'
+        }
+        resources {
+            srcDir '/src/test/java/Resources'
+        }
+    }
 }
 
 configurations {
@@ -80,7 +86,7 @@ dependencies {
     compile group: 'net.serenity-bdd', name: 'serenity-reports', version: '2.0.40'
     compile group: 'net.serenity-bdd', name: 'serenity-rest-assured', version: '2.0.40'
     compile group: 'net.serenity-bdd', name: 'serenity-report-resources', version: '2.0.40'
-    
+
     compile group: 'org.apache.poi', name: 'poi', version: '4.0.1'
     compile group: 'org.apache.poi', name: 'poi-ooxml-schemas', version: '4.0.1'
     compile group: 'org.apache.poi', name: 'poi-ooxml', version: '4.0.1'
@@ -90,9 +96,8 @@ dependencies {
 }
 
 
-
 tasks.withType(Test) {
-    gradle.startParameter.continueOnFailure = true
+//    gradle.startParameter.continueOnFailure = true
     systemProperties = System.getProperties()
     testLogging.events "started", "passed", "skipped", "failed", "standardOut", "standardError"
     System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.Jdk14Logger");
@@ -108,9 +113,9 @@ task run_logistics(type: Test) {
         suiteName 'Logistics'
         filter {
 
-            includeTestsMatching "Logistics.SenerityDemo"
+            includeTestsMatching "SenerityDemo"
+
 
         }
     }
 }
-

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Logistics.SenerityDemo" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-02-20T09:37:39" hostname="Chris-Mkhontwana.wifi.hq.takealot.com" time="0.809">
+  <properties/>
+  <testcase name="printTestData" classname="Logistics.SenerityDemo" time="0.741"/>
+  <testcase name="printTestDataThree" classname="Logistics.SenerityDemo" time="0.0"/>
+  <testcase name="printTestDataTwo" classname="Logistics.SenerityDemo" time="0.0"/>
+  <system-out><![CDATA[Workbook has 2 Sheets : 
+Retrieving Sheets using Iterator
+=> Locations
+=> Sheet2
+Retrieving Sheets using for-each loop
+=> Locations
+=> Sheet2
+This is the dummy test case 1This is the dummy test case 3This is the dummy test case 2]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
