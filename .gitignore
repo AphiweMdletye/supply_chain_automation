@@ -1,9 +1,9 @@
 #My ignored files
-.gradle/
-.idea/
-.build/
+.gradle/*
+.idea/*
+.build/*
 
-api/allure-report/
+supply_chain_automation/allure-report/
 *.idea/
 
 *.gradle/
@@ -24,17 +24,18 @@ build/*
 
 *.log
 
+*.xml
+
 *.jar
 
-#api/build.gradle
-
-api/build/allure-results/
-api/build/reports/
-api/build/test-results/
+supply_chain_automation/build/allure-results/
+supply_chain_automation/build/reports/
+supply_chain_automation/build/test-results/
 gradle/.DS_Store
-api/build/classes/java/
+.gradle/4.10/
+supply_chain_automation/build/classes/java/
 build/reports/buildDashboard/*.html
-api/build/classes/java/
+supply_chain_automation/build/classes/java/
 
 #Mac OS stuff
 .DS_Store

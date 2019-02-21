@@ -7,16 +7,15 @@ import java.lang.reflect.Method;
 import java.io.IOException;
 
 
-public class SenerityDemo
-{
-    @Test
-    public void printTestData(Method method) throws IOException, InvalidFormatException
-    {
+public class SenerityDemo {
+
+    @Test(enabled = false)
+    public void printTestData(Method method) throws IOException, InvalidFormatException {
 //        String name =  method.getName();
-        String name =  "Creating a Mowbray location";
+        String name = "Creating a Mowbray location";
         String[][] data = ExcelUtility.ReadExcelFile();
 
-        ExcelUtility.getSpecificTestData(name,data);
+        ExcelUtility.getSpecificTestData(name, data);
 
 
     }
@@ -41,20 +40,16 @@ public class SenerityDemo
 //    }
 
 
-
-    public void printTestDataTFour()
-    {
+    public void printTestDataTFour() {
         System.out.print("This is the dummy test case 4");
     }
 
-    public void printTestDataTwo()
-    {
+    public void printTestDataTwo() {
         System.out.print("This is the dummy test case 2");
     }
 
 
-    public void printTestDataThree()
-    {
+    public void printTestDataThree() {
         System.out.print("This is the dummy test case 3");
 
     }
