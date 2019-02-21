@@ -1,53 +1,51 @@
 package Logistics;
-import Engine.EngineDriver;
-import Utils.ExcelUtility;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+
+/**
+ * @author chris
+ * Date: 21/02/19
+ */
+
+//import Engine.EngineDriver;
+import main.Engine.EngineDriver;
 import org.testng.annotations.Test;
-import java.lang.reflect.Method;
-import java.io.IOException;
 
 
-public class SenerityDemo extends EngineDriver
-{
-    @Test
-    public void printTestData()
-    {
+public class SenerityDemo extends EngineDriver {
+
+    @Test(enabled = false)
+    public void printTestData() {
         System.out.print("printTestData");
-        System.out.print("\n"+currentTestData);
+        System.out.print("\n" + currentTestData);
         System.out.print("\n\n");
     }
 
-    @Test
-    public void CreateMowbrayLocation()
-    {
+    @Test(enabled = false)
+    public void CreateMowbrayLocation() {
         System.out.print("CreateMowbrayLocation");
-        System.out.print("\n"+currentTestData);
+        System.out.print("\n" + currentTestData);
         System.out.print("\n\n");
     }
 
-    @Test
-    public void CreateRondeboschLocation()
-    {
+    @Test(enabled = false)
+    public void CreateRondeboschLocation() {
         System.out.print("CreateRondeboschLocation");
-        System.out.print("\n"+currentTestData);
+        System.out.print("\n" + currentTestData);
         System.out.print("\n\n");
 
     }
-    @Test
-    public void CreateLocationWithOutStreetName()
-    {
+
+    @Test(enabled = false)
+    public void CreateLocationWithOutStreetName() {
         System.out.print("CreateLocationWithOutStreetName");
-        System.out.print("\n"+currentTestData);
+        System.out.print("\n" + currentTestData);
         System.out.print("\n\n");
 
     }
 
-    @Test
-    public void CreateWoodstockLocation()
-    {
+    @Test(enabled = false)
+    public void CreateWoodstockLocation() {
         System.out.print("This is the dummy test case 4");
-        System.out.print("\n"+currentTestData);
+        System.out.print("\n" + currentTestData);
         System.out.print("\n\n");
     }
-
 }

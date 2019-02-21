@@ -1,16 +1,20 @@
-package Utils;
+package main.Utils;
 
-import Engine.EngineDriver;
+/**
+ * @author chris
+ * Date: 21/02/19
+ */
+
+//import Engine.EngineDriver;
+import main.Engine.EngineDriver;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;
-
 import java.io.File;
 import java.io.IOException;
 
-
 public class ExcelUtility extends EngineDriver {
 
-   //The method read data from the spread sheet and store it in a 2D array
+    //The method read data from the spread sheet and store it in a 2D array
     public static String[][] ReadExcelFile(String dataSheetName) throws IOException, InvalidFormatException {
 
         // Creating a Workbook from an Excel file (.xls or .xlsx)
@@ -35,10 +39,8 @@ public class ExcelUtility extends EngineDriver {
                 excelData[i][j] = valueAsSeenInExcel;
             }
         }
+
         workbook.close();
         return excelData;
     }
-
-
-
 }
