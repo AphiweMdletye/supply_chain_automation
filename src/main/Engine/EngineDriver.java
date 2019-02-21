@@ -5,7 +5,7 @@ package main.Engine;
  * Date: 21/02/19
  */
 
-import main.Utils.ExcelUtility;
+//import io.qameta.allure.restassured.AllureRestAssured;
 import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
@@ -14,6 +14,8 @@ import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import main.Config.GlobalEnums;
+import main.Utils.ExcelUtility;
 import org.apache.log4j.PropertyConfigurator;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.annotations.BeforeClass;
@@ -66,7 +68,7 @@ public class EngineDriver {
         PropertyConfigurator.configure(prop);
         //endregion
 
-        main.Config.GlobalEnums.Environment env = main.Config.GlobalEnums.Environment.TAKEALOT;
+        GlobalEnums.Environment env = GlobalEnums.Environment.TAKEALOT;
 
         RestAssured.baseURI = env.base_Url;
         RestAssured.basePath = env.path;
@@ -75,7 +77,6 @@ public class EngineDriver {
         respec = new ResponseSpecBuilder();
 
         builder.addFilter(new AllureRestAssured());//To setup Filter that gonna attach Request/Response logs to report
-
         respec.expectResponseTime(lessThan(10L), TimeUnit.SECONDS);
 
         requestSpec = builder.build();

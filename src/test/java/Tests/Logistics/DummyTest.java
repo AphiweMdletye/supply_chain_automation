@@ -5,7 +5,9 @@ package Logistics;
  * Date: 21/02/19
  */
 
+//import Config.GlobalEnums;
 import io.restassured.response.ValidatableResponse;
+import main.Config.GlobalEnums;
 import main.Engine.EngineDriver;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Description;
@@ -14,6 +16,8 @@ import ru.yandex.qatools.allure.annotations.Stories;
 import java.io.IOException;
 
 public class DummyTest extends EngineDriver {
+
+    GlobalEnums.Environment env = GlobalEnums.Environment.TAKEALOT;
 
     //Payload
     String payload = "{\n" +
@@ -29,6 +33,7 @@ public class DummyTest extends EngineDriver {
                     "    }";
 
     String uri = "clients/" + GENERAL + "/locations";
+//    String uri = "clients/" + env.port + "/locations";
 
     /**
      * This function is to create ID locations

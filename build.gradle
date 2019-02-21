@@ -62,6 +62,13 @@ test {
 
 dependencies {
 
+    //Allure
+    compile 'ru.yandex.qatools.allure:allure-java-annotations:1.3.9' //Allure Java Annotations
+    testCompile "ru.yandex.qatools.allure:allure-testng-adaptor:1.4.0.RC4+" //Allure TestNG Adaptor
+//    compile group: 'io.qameta.allure', name: 'allure-rest-assured', version: '2.6.0' //Allure Rest Assured Integration TODO 17/01/19
+    compile group: 'io.qameta.allure', name: 'allure-rest-assured', version: '2.0-BETA11' //Allure Rest Assured Integration
+    compile group: 'io.qameta.allure', name: 'allure-testng', version: '2.10.0'
+
     //Allure Report
     agent "org.aspectj:aspectjweaver:1.8.10"
     compile "io.qameta.allure:allure-testng:2.0-BETA10"
@@ -76,11 +83,9 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     testCompile("org.assertj:assertj-core")
 
-    //Allure
-    compile 'ru.yandex.qatools.allure:allure-java-annotations:1.3.9' //Allure Java Annotations
-    testCompile "ru.yandex.qatools.allure:allure-testng-adaptor:1.4.0.RC4+" //Allure TestNG Adaptor
-    compile group: 'io.qameta.allure', name: 'allure-rest-assured', version: '2.6.0' //Allure Rest Assured Integration TODO 17/01/19
-
+    //Allure Attachments
+    compile group: 'io.qameta.allure', name: 'allure-attachments', version: '2.10.0'
+ 
     //Apache POI
     compile group: 'org.apache.poi', name: 'poi', version: '4.0.0' //To read files from excel sheets
 
@@ -176,7 +181,7 @@ dependencies {
 
 
 tasks.withType(Test) {
-    systemProperty 'allure.results.directory', 'build/allure-results' 
+    systemProperty 'allure.results.directory', 'build/allure-results'
     gradle.startParameter.continueOnFailure = true
     systemProperties = System.getProperties()
     testLogging.events "started", "passed", "skipped", "failed", "standardOut", "standardError"
@@ -192,8 +197,8 @@ task run_logistics(type: Test) {
         suiteName 'Logistics'
         filter {
 
-            includeTestsMatching "SenerityDemo" 
-            includeTestsMatching "DummyTest" 
+            includeTestsMatching "SenerityDemo"
+            includeTestsMatching "DummyTest"
 
         }
     }
