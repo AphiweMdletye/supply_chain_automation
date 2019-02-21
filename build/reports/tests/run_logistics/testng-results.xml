@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Logistics" duration-ms="828" started-at="2019-02-20T09:37:39Z" finished-at="2019-02-20T09:37:40Z">
+  <suite name="Logistics" duration-ms="776" started-at="2019-02-21T08:52:52Z" finished-at="2019-02-21T08:52:53Z">
     <groups>
     </groups>
-    <test name="Gradle test" duration-ms="828" started-at="2019-02-20T09:37:39Z" finished-at="2019-02-20T09:37:40Z">
+    <test name="Gradle test" duration-ms="776" started-at="2019-02-21T08:52:52Z" finished-at="2019-02-21T08:52:53Z">
       <class name="Logistics.SenerityDemo">
-        <test-method status="PASS" signature="printTestData()[pri:0, instance:Logistics.SenerityDemo@790f2cd7]" name="printTestData" duration-ms="741" started-at="2019-02-20T11:37:39Z" finished-at="2019-02-20T11:37:40Z">
+        <test-method status="PASS" signature="printTestData(java.lang.reflect.Method)[pri:0, instance:Logistics.SenerityDemo@163fd8f8]" name="printTestData" duration-ms="715" started-at="2019-02-21T10:52:52Z" finished-at="2019-02-21T10:52:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Logistics.SenerityDemo.printTestData(java.lang.reflect.Method) throws java.io.IOException,org.apache.poi.openxml4j.exceptions.InvalidFormatException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printTestData -->
-        <test-method status="PASS" signature="printTestDataThree()[pri:0, instance:Logistics.SenerityDemo@790f2cd7]" name="printTestDataThree" duration-ms="0" started-at="2019-02-20T11:37:40Z" finished-at="2019-02-20T11:37:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- printTestDataThree -->
-        <test-method status="PASS" signature="printTestDataTwo()[pri:0, instance:Logistics.SenerityDemo@790f2cd7]" name="printTestDataTwo" duration-ms="0" started-at="2019-02-20T11:37:40Z" finished-at="2019-02-20T11:37:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- printTestDataTwo -->
       </class> <!-- Logistics.SenerityDemo -->
     </test> <!-- Gradle test -->
   </suite> <!-- Logistics -->
