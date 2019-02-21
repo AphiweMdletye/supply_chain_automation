@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1550739172844" stop="1550739173627">
+    <name>Logistics</name>
+    <test-cases>
+        <test-case start="1550739172865" stop="1550739173575" status="passed">
+            <name>printTestData[public void Logistics.SenerityDemo.printTestData(java.lang.reflect.Method) throws java.io.IOException,org.apache.poi.openxml4j.exceptions.InvalidFormatException]</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels/>
+</ns2:test-suite>

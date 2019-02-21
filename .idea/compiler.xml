@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="main.main.main" target="1.8" />
+      <module name="main.main.test" target="1.8" />
       <module name="supply_chain_automation.main" target="1.8" />
       <module name="supply_chain_automation.sourceSets" target="1.8" />
       <module name="supply_chain_automation.test" target="1.8" />

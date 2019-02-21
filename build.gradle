@@ -9,24 +9,17 @@ buildscript {
     dependencies {
         classpath "io.qameta.allure:allure-gradle:2.5"
     }
-    project.ext {
-        serenityVersion = '1.1+'
-    }
 
     repositories {
         mavenLocal()
         jcenter()
     }
-
-    dependencies {
-        classpath('net.serenity-bdd:serenity-gradle-plugin:' + serenityVersion)
-    }
+    
 }
 
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'io.qameta.allure'
-apply plugin: 'net.serenity-bdd.aggregator'
 
 
 sourceCompatibility = 1.8
@@ -57,7 +50,14 @@ repositories {
     mavenCentral()
 }
 
+test {
+    testLogging {
+        showStandardStreams = true
+    }
+}
+
 dependencies {
+    compile localGroovy()
     compile 'org.testng:testng:6.11'
     compile 'org.assertj:assertj-core:3.8.0'
     compile 'io.rest-assured:rest-assured:3.0.3'
@@ -77,16 +77,7 @@ dependencies {
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.4.0'
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.4.0'
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.4.0'
-
-    compile group: 'net.serenity-bdd', name: 'serenity-junit', version: '2.0.40'
-    compile group: 'net.serenity-bdd', name: 'serenity-core', version: '2.0.40'
-    compile group: 'net.serenity-bdd', name: 'serenity-model', version: '2.0.40'
-    compile group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.0.40'
-    compile group: 'net.serenity-bdd', name: 'serenity-jbehave', version: '1.44.0'
-    compile group: 'net.serenity-bdd', name: 'serenity-reports', version: '2.0.40'
-    compile group: 'net.serenity-bdd', name: 'serenity-rest-assured', version: '2.0.40'
-    compile group: 'net.serenity-bdd', name: 'serenity-report-resources', version: '2.0.40'
-
+    
     compile group: 'org.apache.poi', name: 'poi', version: '4.0.1'
     compile group: 'org.apache.poi', name: 'poi-ooxml-schemas', version: '4.0.1'
     compile group: 'org.apache.poi', name: 'poi-ooxml', version: '4.0.1'
@@ -97,7 +88,7 @@ dependencies {
 
 
 tasks.withType(Test) {
-//    gradle.startParameter.continueOnFailure = true
+    gradle.startParameter.continueOnFailure = true
     systemProperties = System.getProperties()
     testLogging.events "started", "passed", "skipped", "failed", "standardOut", "standardError"
     System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.Jdk14Logger");
@@ -108,7 +99,6 @@ tasks.withType(Test) {
 
 task run_logistics(type: Test) {
     useTestNG() {
-//    useJUnit() {
         useDefaultListeners = true
         suiteName 'Logistics'
         filter {

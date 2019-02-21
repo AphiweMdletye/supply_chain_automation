@@ -1,10 +1,31 @@
-Workbook has 2 Sheets : 
-!Retrieving Sheets using Iterator
-=> Locations
-
-=> Sheet2
 &Retrieving Sheets using for-each loop
 => Locations
-
-=> Sheet2
-This is the dummy test case 1This is the dummy test case 3This is the dummy test case 2
+Number of rows11
+Number of columns15
+
+
+
+0We found our test : Creating a Mowbray location
+   Key   :   Value 
+) Test case : Creating a Mowbray location
+ Street : 252 Main Road
+ Suburb : Mowbray
+ City : Cape Town
+ Province : Western Cape
+ PostalCode : 7700
+ CountryCode : ZA
+ AddressType : RESIDENTIAL
+ BusinessName : est User
+- ComplexDetails : created under client 2 hom
+ Hub : MOW
+ deliveryType : null
+ goodsType : null
+ authTime : null
+ offerTime : null
+
+
+
+
+
+
+
