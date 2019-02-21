@@ -1,0 +1,10 @@
+.DS_Store
+build/classes/java/test/Logistics/*.class
+build/test-results/run_logistics/binary/output.bin
+build/test-results/run_logistics/binary/output.bin.idx
+.gradle/
+.idea/
+build/test-results/run_logistics/TEST-Logistics.SenerityDemo.xml
+build/test-results/run_logistics/binary/results.bin
+supply_chain_automation.iml
+
