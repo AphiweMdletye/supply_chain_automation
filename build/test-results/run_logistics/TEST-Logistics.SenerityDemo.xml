@@ -1,37 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Logistics.SenerityDemo" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-21T08:52:52" hostname="Chris-Mkhontwana.wifi.hq.takealot.com" time="0.715">
+<testsuite name="Logistics.SenerityDemo" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-02-21T11:47:24" hostname="Chris-Mkhontwana.wifi.hq.takealot.com" time="0.051">
   <properties/>
-  <testcase name="printTestData[0](public void Logistics.SenerityDemo.printTestData(java.lang.reflect.Method) throws java.io.IOException,org.apache.poi.openxml4j.exceptions.InvalidFormatException)" classname="Logistics.SenerityDemo" time="0.715"/>
-  <system-out><![CDATA[Retrieving Sheets using for-each loop
-=> Locations
-Number of rows11
+  <testcase name="CreateLocationWithOutStreetName" classname="Logistics.SenerityDemo" time="0.004"/>
+  <testcase name="CreateMowbrayLocation" classname="Logistics.SenerityDemo" time="0.0"/>
+  <testcase name="CreateRondeboschLocation" classname="Logistics.SenerityDemo" time="0.001"/>
+  <testcase name="CreateWoodstockLocation" classname="Logistics.SenerityDemo" time="0.0"/>
+  <testcase name="printTestData" classname="Logistics.SenerityDemo" time="0.001"/>
+  <system-out><![CDATA[Number of rows11
 Number of columns15
+CreateLocationWithOutStreetName
+{Test case=CreateLocationWithOutStreetName, Street=, Suburb=Rondebosch, City=Cape Town, Province=Western Cape, PostalCode=7700, CountryCode=ZA, AddressType=RESIDENTIAL, BusinessName=est User, ComplexDetails=created under client 2 hom, Hub=RON, deliveryType=null, goodsType=null, authTime=null, offerTime=null}
 
+CreateMowbrayLocation
+{Test case=CreateMowbrayLocation, Street=252 Main Road, Suburb=Mowbray, City=Cape Town, Province=Western Cape, PostalCode=7700, CountryCode=ZA, AddressType=RESIDENTIAL, BusinessName=est User, ComplexDetails=created under client 2 hom, Hub=MOW, deliveryType=null, goodsType=null, authTime=null, offerTime=null}
 
+CreateRondeboschLocation
+{Test case=CreateRondeboschLocation, Street=250 Main Road, Suburb=Rondebosch, City=Cape Town, Province=Western Cape, PostalCode=7700, CountryCode=ZA, AddressType=RESIDENTIAL, BusinessName=est User, ComplexDetails=created under client 2 hom, Hub=RON, deliveryType=DELIVERY, goodsType=NORMAL, authTime=9:56, offerTime=7:00}
 
-We found our test : Creating a Mowbray location
-   Key   :   Value 
- Test case : Creating a Mowbray location
- Street : 252 Main Road
- Suburb : Mowbray
- City : Cape Town
- Province : Western Cape
- PostalCode : 7700
- CountryCode : ZA
- AddressType : RESIDENTIAL
- BusinessName : est User
- ComplexDetails : created under client 2 hom
- Hub : MOW
- deliveryType : null
- goodsType : null
- authTime : null
- offerTime : null
+This is the dummy test case 4
+{Test case=CreateWoodstockLocation, Street=251 Main Road, Suburb=Woodstock, City=Cape Town, Province=Western Cape, PostalCode=7700, CountryCode=ZA, AddressType=RESIDENTIAL, BusinessName=est User, ComplexDetails=created under client 2 hom, Hub=WOOD, deliveryType=null, goodsType=null, authTime=null, offerTime=null}
 
-
-
-
-
-
+printTestData
+{}
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
