@@ -1,63 +1,53 @@
 package Logistics;
-
+import Engine.EngineDriver;
+import Utils.ExcelUtility;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import main.Utils.ExcelUtility;
 import org.testng.annotations.Test;
 import java.lang.reflect.Method;
 import java.io.IOException;
 
 
-public class SenerityDemo
+public class SenerityDemo extends EngineDriver
 {
     @Test
-    public void printTestData(Method method) throws IOException, InvalidFormatException
+    public void printTestData()
     {
-//        String name =  method.getName();
-        String name =  "Creating a Mowbray location";
-        String[][] data = ExcelUtility.ReadExcelFile();
+        System.out.print("printTestData");
+        System.out.print("\n"+currentTestData);
+        System.out.print("\n\n");
+    }
 
-        ExcelUtility.getSpecificTestData(name,data);
+    @Test
+    public void CreateMowbrayLocation()
+    {
+        System.out.print("CreateMowbrayLocation");
+        System.out.print("\n"+currentTestData);
+        System.out.print("\n\n");
+    }
 
+    @Test
+    public void CreateRondeboschLocation()
+    {
+        System.out.print("CreateRondeboschLocation");
+        System.out.print("\n"+currentTestData);
+        System.out.print("\n\n");
+
+    }
+    @Test
+    public void CreateLocationWithOutStreetName()
+    {
+        System.out.print("CreateLocationWithOutStreetName");
+        System.out.print("\n"+currentTestData);
+        System.out.print("\n\n");
 
     }
 
-//    @Test
-//    public void printTestData1() throws IOException, InvalidFormatException
-//    {
-//
-//        printTestDataTwo();
-//        printTestDataThree();
-//
-//    }
-//
-//
-//    @Test
-//    public void printTestData2() throws IOException, InvalidFormatException
-//    {
-//
-//        printTestDataTFour();
-//        printTestDataTwo();
-//
-//    }
-
-
-
-    public void printTestDataTFour()
+    @Test
+    public void CreateWoodstockLocation()
     {
         System.out.print("This is the dummy test case 4");
+        System.out.print("\n"+currentTestData);
+        System.out.print("\n\n");
     }
-
-    public void printTestDataTwo()
-    {
-        System.out.print("This is the dummy test case 2");
-    }
-
-
-    public void printTestDataThree()
-    {
-        System.out.print("This is the dummy test case 3");
-
-    }
-
 
 }

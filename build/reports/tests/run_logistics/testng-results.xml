@@ -1,20 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Logistics" duration-ms="776" started-at="2019-02-21T08:52:52Z" finished-at="2019-02-21T08:52:53Z">
+  <suite name="Logistics" duration-ms="551" started-at="2019-02-21T11:47:23Z" finished-at="2019-02-21T11:47:24Z">
     <groups>
     </groups>
-    <test name="Gradle test" duration-ms="776" started-at="2019-02-21T08:52:52Z" finished-at="2019-02-21T08:52:53Z">
+    <test name="Gradle test" duration-ms="551" started-at="2019-02-21T11:47:23Z" finished-at="2019-02-21T11:47:24Z">
       <class name="Logistics.SenerityDemo">
-        <test-method status="PASS" signature="printTestData(java.lang.reflect.Method)[pri:0, instance:Logistics.SenerityDemo@163fd8f8]" name="printTestData" duration-ms="715" started-at="2019-02-21T10:52:52Z" finished-at="2019-02-21T10:52:53Z">
+        <test-method status="PASS" signature="startEngine()[pri:0, instance:Logistics.SenerityDemo@368b29ff]" name="startEngine" is-config="true" duration-ms="487" started-at="2019-02-21T13:47:23Z" finished-at="2019-02-21T13:47:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startEngine -->
+        <test-method status="PASS" signature="testSetUp(java.lang.reflect.Method)[pri:0, instance:Logistics.SenerityDemo@368b29ff]" name="testSetUp" is-config="true" duration-ms="2" started-at="2019-02-21T13:47:24Z" finished-at="2019-02-21T13:47:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Logistics.SenerityDemo.printTestData(java.lang.reflect.Method) throws java.io.IOException,org.apache.poi.openxml4j.exceptions.InvalidFormatException]]>
+                <![CDATA[public void Logistics.SenerityDemo.CreateLocationWithOutStreetName()]]>
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="CreateLocationWithOutStreetName()[pri:0, instance:Logistics.SenerityDemo@368b29ff]" name="CreateLocationWithOutStreetName" duration-ms="4" started-at="2019-02-21T13:47:24Z" finished-at="2019-02-21T13:47:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateLocationWithOutStreetName -->
+        <test-method status="PASS" signature="CreateMowbrayLocation()[pri:0, instance:Logistics.SenerityDemo@368b29ff]" name="CreateMowbrayLocation" duration-ms="0" started-at="2019-02-21T13:47:24Z" finished-at="2019-02-21T13:47:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateMowbrayLocation -->
+        <test-method status="PASS" signature="testSetUp(java.lang.reflect.Method)[pri:0, instance:Logistics.SenerityDemo@368b29ff]" name="testSetUp" is-config="true" duration-ms="0" started-at="2019-02-21T13:47:24Z" finished-at="2019-02-21T13:47:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Logistics.SenerityDemo.CreateMowbrayLocation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="testSetUp(java.lang.reflect.Method)[pri:0, instance:Logistics.SenerityDemo@368b29ff]" name="testSetUp" is-config="true" duration-ms="0" started-at="2019-02-21T13:47:24Z" finished-at="2019-02-21T13:47:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Logistics.SenerityDemo.CreateRondeboschLocation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="CreateRondeboschLocation()[pri:0, instance:Logistics.SenerityDemo@368b29ff]" name="CreateRondeboschLocation" duration-ms="1" started-at="2019-02-21T13:47:24Z" finished-at="2019-02-21T13:47:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateRondeboschLocation -->
+        <test-method status="PASS" signature="testSetUp(java.lang.reflect.Method)[pri:0, instance:Logistics.SenerityDemo@368b29ff]" name="testSetUp" is-config="true" duration-ms="1" started-at="2019-02-21T13:47:24Z" finished-at="2019-02-21T13:47:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Logistics.SenerityDemo.CreateWoodstockLocation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="CreateWoodstockLocation()[pri:0, instance:Logistics.SenerityDemo@368b29ff]" name="CreateWoodstockLocation" duration-ms="0" started-at="2019-02-21T13:47:24Z" finished-at="2019-02-21T13:47:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateWoodstockLocation -->
+        <test-method status="PASS" signature="testSetUp(java.lang.reflect.Method)[pri:0, instance:Logistics.SenerityDemo@368b29ff]" name="testSetUp" is-config="true" duration-ms="2" started-at="2019-02-21T13:47:24Z" finished-at="2019-02-21T13:47:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Logistics.SenerityDemo.printTestData()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="printTestData()[pri:0, instance:Logistics.SenerityDemo@368b29ff]" name="printTestData" duration-ms="1" started-at="2019-02-21T13:47:24Z" finished-at="2019-02-21T13:47:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printTestData -->
