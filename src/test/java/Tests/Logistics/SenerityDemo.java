@@ -1,58 +1,50 @@
 package Logistics;
 
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import main.Utils.ExcelUtility;
+/**
+ * @author chris
+ * Date: 21/02/19
+ */
+
+import main.Engine.EngineDriver;
 import org.testng.annotations.Test;
-import java.lang.reflect.Method;
-import java.io.IOException;
 
 
-public class SenerityDemo {
+public class SenerityDemo extends EngineDriver {
 
     @Test(enabled = false)
-    public void printTestData(Method method) throws IOException, InvalidFormatException {
-//        String name =  method.getName();
-        String name = "Creating a Mowbray location";
-        String[][] data = ExcelUtility.ReadExcelFile();
+    public void printTestData() {
+        System.out.print("printTestData");
+        System.out.print("\n" + currentTestData);
+        System.out.print("\n\n");
+    }
 
-        ExcelUtility.getSpecificTestData(name, data);
+    @Test(enabled = false)
+    public void CreateMowbrayLocation() {
+        System.out.print("CreateMowbrayLocation");
+        System.out.print("\n" + currentTestData);
+        System.out.print("\n\n");
+    }
 
+    @Test(enabled = false)
+    public void CreateRondeboschLocation() {
+        System.out.print("CreateRondeboschLocation");
+        System.out.print("\n" + currentTestData);
+        System.out.print("\n\n");
 
     }
 
-//    @Test
-//    public void printTestData1() throws IOException, InvalidFormatException
-//    {
-//
-//        printTestDataTwo();
-//        printTestDataThree();
-//
-//    }
-//
-//
-//    @Test
-//    public void printTestData2() throws IOException, InvalidFormatException
-//    {
-//
-//        printTestDataTFour();
-//        printTestDataTwo();
-//
-//    }
+    @Test(enabled = false)
+    public void CreateLocationWithOutStreetName() {
+        System.out.print("CreateLocationWithOutStreetName");
+        System.out.print("\n" + currentTestData);
+        System.out.print("\n\n");
 
+    }
 
-    public void printTestDataTFour() {
+    @Test(enabled = false)
+    public void CreateWoodstockLocation() {
         System.out.print("This is the dummy test case 4");
+        System.out.print("\n" + currentTestData);
+        System.out.print("\n\n");
     }
-
-    public void printTestDataTwo() {
-        System.out.print("This is the dummy test case 2");
-    }
-
-
-    public void printTestDataThree() {
-        System.out.print("This is the dummy test case 3");
-
-    }
-
-
 }

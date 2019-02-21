@@ -1,32 +1,26 @@
 package main.Utils;
 
+/**
+ * @author chris
+ * Date: 21/02/19
+ */
+
+import main.Engine.EngineDriver;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;
-
 import java.io.File;
 import java.io.IOException;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
-public class ExcelUtility {
-    public static final String SAMPLE_XLSX_FILE_PATH = "/Users/chris.mkhontwana/Documents/GitHub/Logistics/supply_chain_automation/src/main/DataFiles/userData.xlsx";
+public class ExcelUtility extends EngineDriver {
 
-    public static String[][] ReadExcelFile() throws IOException, InvalidFormatException {
-        String[][] excelData = null;
+    //The method read data from the spread sheet and store it in a 2D array
+    public static String[][] ReadExcelFile(String dataSheetName) throws IOException, InvalidFormatException {
+
         // Creating a Workbook from an Excel file (.xls or .xlsx)
-        Workbook workbook = WorkbookFactory.create(new File(SAMPLE_XLSX_FILE_PATH));
+        Workbook workbook = WorkbookFactory.create(new File(XLSX_FILE_PATH));
 
-        // 2. Or you can use a for-each loop
-        System.out.println("Retrieving Sheets using for-each loop");
-        for (Sheet sheet : workbook) {
-            System.out.println("=> " + sheet.getSheetName());
-        }
-
-        // Getting the Sheet at index zero
-        Sheet sheet = workbook.getSheetAt(0);
-
-        String dataSheetName = "";
-        Sheet sheetName = workbook.getSheet(dataSheetName);
+        //Get the data from the sheet you want to read
+        Sheet sheet = workbook.getSheet(dataSheetName);
 
         //Find number of rows in excel file
         int rowCount = sheet.getLastRowNum() - sheet.getFirstRowNum();
@@ -47,32 +41,4 @@ public class ExcelUtility {
         workbook.close();
         return excelData;
     }
-
-    public static void getSpecificTestData(String testName, String[][] excelData) {
-        Map<String, String> currentTestData = new LinkedHashMap<String, String>();
-
-        int numRows = excelData.length;
-        int numCols = excelData[0].length;
-
-        System.out.println("Number of rows" + numRows);
-        System.out.println("Number of columns" + numCols);
-
-        for (int i = 0; i < numRows; i++)
-        {
-            if (excelData[i][0].toString().equals(testName))
-            {
-                System.out.print("We found our test : " + excelData[i][0]);
-                System.out.print("\n   Key   :   Value ");
-                for (int j = 0; j < numCols; j++) {
-//                    System.out.print(excelData[i][j]);
-                    System.out.print("\n " + excelData[0][j] + " : " + excelData[i][j]);
-                    currentTestData.put(excelData[0][j], excelData[i][j]);
-
-                }
-            }
-
-            System.out.println("");
-        }
-    }
-
 }

@@ -176,9 +176,7 @@ dependencies {
 
 
 tasks.withType(Test) {
-    systemProperty 'allure.results.directory', 'build/allure-results'
-    systemProperties['API_HOST'] = 'https://uat-api2.mrdcourier.com' //TODO Tal
-//    systemProperties['API_HOST'] = 'https://uat-api2-food.mrdcourier.com' //TODO MrD
+    systemProperty 'allure.results.directory', 'build/allure-results' 
     gradle.startParameter.continueOnFailure = true
     systemProperties = System.getProperties()
     testLogging.events "started", "passed", "skipped", "failed", "standardOut", "standardError"
