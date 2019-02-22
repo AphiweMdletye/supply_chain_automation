@@ -1,4 +1,4 @@
-#My ignored files
+# My ignored files
 .gradle/4.10/fileHashes/fileHashes.lock
 .gradle/4.10/fileContent/fileContent.lock
 .gradle/4.10/fileHashes/fileHashes.bin
@@ -32,10 +32,10 @@ build/*
 *.xml
 *.jar
 
-#Mac OS stuff
+# Mac OS stuff
 .DS_Store
 
-#IDEA Files
+# IDEA Files
 .idea
 target
 *.iml
