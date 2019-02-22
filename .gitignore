@@ -9,8 +9,6 @@
 *.lock
 .idea/workspace.xml
 **/build/
-.idea/
-**/.idea/
 build/
 
 supply_chain_automation/allure-report/
@@ -22,27 +20,16 @@ supply_chain_automation/build/classes/java/
 build/reports/buildDashboard/*.html
 
 *.idea/
-
 *.gradle/
-
 #*.build/
-
 *.bin
-
 build/*
-
 *.class
-
 *.idx
-
 *.lock
-
 *.css
-
 *.log
-
 *.xml
-
 *.jar
 
 #Mac OS stuff
@@ -59,6 +46,3 @@ schema
 out/
 .idea/workspace.xml
 .idea/modules/supply_chain_automation.main.iml
-.idea/libraries/Gradle__com_beust_jcommander_1_64.xml
-*.lock
-*.bin
