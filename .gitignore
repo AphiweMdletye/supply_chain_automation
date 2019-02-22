@@ -10,6 +10,7 @@
 .idea/workspace.xml
 **/build/
 .idea/
+**/.idea/
 build/
 
 supply_chain_automation/allure-report/
@@ -59,3 +60,5 @@ out/
 .idea/workspace.xml
 .idea/modules/supply_chain_automation.main.iml
 .idea/libraries/Gradle__com_beust_jcommander_1_64.xml
+*.lock
+*.bin

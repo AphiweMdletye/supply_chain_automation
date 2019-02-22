@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class SuperDemo extends EngineDriver {
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void printTestData() {
 
         System.out.print("printTestData");
@@ -20,7 +20,7 @@ public class SuperDemo extends EngineDriver {
         System.out.print("\n\n");
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void CreateMowbrayLocation() {
 
         System.out.print("CreateMowbrayLocation");
@@ -49,7 +49,7 @@ public class SuperDemo extends EngineDriver {
         System.out.print("\n\n");
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void CreateRondeboschLocation() {
 
         System.out.print("CreateRondeboschLocation");
@@ -57,7 +57,7 @@ public class SuperDemo extends EngineDriver {
         System.out.print("\n\n");
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void CreateLocationWithOutStreetName() {
 
         System.out.print("CreateLocationWithOutStreetName");
@@ -65,7 +65,7 @@ public class SuperDemo extends EngineDriver {
         System.out.print("\n\n");
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void CreateWoodstockLocation() {
 
         System.out.print("This is the dummy test case 4");
