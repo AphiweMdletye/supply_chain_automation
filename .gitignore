@@ -9,7 +9,6 @@
 *.lock
 .idea/workspace.xml
 **/build/
-.idea/
 build/
 
 supply_chain_automation/allure-report/
@@ -21,27 +20,16 @@ supply_chain_automation/build/classes/java/
 build/reports/buildDashboard/*.html
 
 *.idea/
-
 *.gradle/
-
 #*.build/
-
 *.bin
-
 build/*
-
 *.class
-
 *.idx
-
 *.lock
-
 *.css
-
 *.log
-
 *.xml
-
 *.jar
 
 #Mac OS stuff
