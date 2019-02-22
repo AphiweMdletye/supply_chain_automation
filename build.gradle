@@ -189,8 +189,8 @@ task run_logistics(type: Test) {
         suiteName 'Logistics'
         filter {
 
-            includeTestsMatching "SuperDemo"
-            includeTestsMatching "DummyTest"
+            includeTestsMatching "Logistics.SuperDemo"
+            includeTestsMatching "Logistics.DummyTest"
 
         }
     }

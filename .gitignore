@@ -11,7 +11,7 @@ build/*
 *idx
 allure-report/*
 target/*
-
+.idea/workspace.xml
 # Mac OS stuff
 .DS_Store
 
