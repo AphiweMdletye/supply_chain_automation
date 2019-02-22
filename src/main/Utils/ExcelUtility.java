@@ -1,12 +1,15 @@
 package main.Utils;
 
+/**
+ * @author chris
+ * Date: 21/02/19
+ */
+
 import main.Engine.EngineDriver;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;
-
 import java.io.File;
 import java.io.IOException;
-
 
 public class ExcelUtility extends EngineDriver {
 
@@ -35,10 +38,8 @@ public class ExcelUtility extends EngineDriver {
                 excelData[i][j] = valueAsSeenInExcel;
             }
         }
+
         workbook.close();
         return excelData;
     }
-
-
-
 }
