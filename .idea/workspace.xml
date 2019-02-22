@@ -2,66 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38df4241-ce09-4e81-ac53-e5f12ed42ddb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/DataFiles/JsonBody.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/Logistics/SuperDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/allure-results/4373f191-4e54-488b-8721-7f3fc109deea-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Engine/EngineDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Engine/EngineDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Logistics/SenerityDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Logistics/SenerityDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/Logistics/SenerityDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/Logistics/SenerityDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/Logistics/Gradle test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/Logistics/Gradle test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/bullet_point.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/classes/Logistics.SenerityDemo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/collapseall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/failed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/jquery-1.7.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/junitreports/TEST-Logistics.SenerityDemo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/navigator-bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/old/Logistics/Gradle test.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/old/Logistics/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/old/Logistics/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/old/Logistics/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/old/Logistics/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/old/Logistics/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/old/Logistics/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/old/Logistics/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/old/Logistics/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/old/Logistics/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/old/Logistics/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/old/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/packages/Logistics.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/passed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/skipped.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/testng-reports.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/testng-reports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/testng-results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/run_logistics/testng.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/run_logistics/TEST-Logistics.SenerityDemo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/run_logistics/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/run_logistics/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/run_logistics/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/run_logistics/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/DataFiles/userData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/DataFiles/userData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Engine/EngineDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Engine/EngineDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Logistics/SenerityDemo.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -95,11 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
-              <caret line="105" column="44" lean-forward="true" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
+              <caret line="105" column="44" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -120,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/Engine/EngineDriver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="146">
-              <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+              <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,16 +86,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/DataFiles/JsonBody.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -193,8 +135,8 @@
         <option value="$PROJECT_DIR$/src/main/Engine/EngineDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/Tests/Logistics/SenerityDemo.java" />
         <option value="$PROJECT_DIR$/src/main/DataFiles/JsonBody.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -289,7 +231,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ToolWindowRun.ShowToolbar" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550818865548" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550819365938" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -561,7 +503,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/Engine/EngineDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
-          <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -581,21 +523,21 @@
     <entry file="file://$PROJECT_DIR$/src/main/DataFiles/JsonBody.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
-          <caret line="105" column="44" lean-forward="true" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
+          <caret line="105" column="44" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
