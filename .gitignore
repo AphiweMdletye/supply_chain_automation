@@ -1,0 +1,13 @@
+
+.gradle/4.10/fileHashes/fileHashes.lock
+.gradle/4.10/fileContent/fileContent.lock
+.gradle/4.10/fileHashes/fileHashes.bin
+.gradle/4.10/fileContent/fileContent.lock
+.gradle/4.10/fileHashes/fileHashes.bin
+.gradle/
+*.bin
+*.lock
+.idea/workspace.xml
+**/build/
+.idea/
+build/

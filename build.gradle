@@ -103,7 +103,7 @@ task run_logistics(type: Test) {
         suiteName 'Logistics'
         filter {
 
-            includeTestsMatching "SenerityDemo"
+            includeTestsMatching "SuperDemo"
 
 
         }

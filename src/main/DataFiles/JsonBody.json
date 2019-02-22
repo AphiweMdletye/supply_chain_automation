@@ -1,0 +1,18 @@
+//{
+//  "Test case": "name",
+//  "Location": {
+//    "suburb": "test"
+//  }
+//}
+
+{
+  "Test case": "name",
+  "Location": [
+    {
+      "Place":
+      {
+        "suburb": "test"
+      }
+    }
+  ]
+}

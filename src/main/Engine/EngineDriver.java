@@ -39,9 +39,6 @@ public class EngineDriver
         int numRows = excelData.length;
         int numCols = excelData[0].length;
 
-        System.out.println("Number of rows" + numRows);
-        System.out.println("Number of columns" + numCols);
-
         for (int i = 0; i < numRows; i++)
         {
             if (excelData[i][0].toString().equals(testName))
