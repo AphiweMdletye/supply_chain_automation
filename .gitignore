@@ -8,5 +8,6 @@
 *.bin
 *.lock
 .idea/workspace.xml
-build/
+**/build/
 .idea/
+build/
