@@ -1,30 +1,30 @@
 package Logistics;
-import Engine.EngineDriver;
-import Utils.ExcelUtility;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+
+/**
+ * @author chris
+ * Date: 21/02/19
+ */
+
+import main.Engine.EngineDriver;
 import org.json.JSONException;
-import org.testng.annotations.Test;
-import java.lang.reflect.Method;
-import java.io.IOException;
 import org.json.JSONObject;
+import org.testng.annotations.Test;
 
+public class SuperDemo extends EngineDriver {
 
-public class SuperDemo extends EngineDriver
-{
-    @Test
-    public void printTestData()
-    {
+    @Test(enabled = false)
+    public void printTestData() {
+
         System.out.print("printTestData");
-        System.out.print("\n"+currentTestData);
+        System.out.print("\n" + currentTestData);
         System.out.print("\n\n");
-
     }
 
-    @Test
-    public void CreateMowbrayLocation()
-    {
+    @Test(enabled = false)
+    public void CreateMowbrayLocation() {
+
         System.out.print("CreateMowbrayLocation");
-        System.out.print("\n"+currentTestData);
+        System.out.print("\n" + currentTestData);
         System.out.print("\n\n");
 
         String jsonBody = "{\n" +
@@ -37,43 +37,39 @@ public class SuperDemo extends EngineDriver
         String suburb = currentTestData.get("Suburb");
         String testcase = currentTestData.get("Test case");
 
-        try
-        {
-            JSONObject jObject  = new JSONObject(jsonBody);
-            jObject.put("Test case",testcase);
-            jObject.getJSONObject("Location").put("suburb",suburb);
+        try {
+            JSONObject jObject = new JSONObject(jsonBody);
+            jObject.put("Test case", testcase);
+            jObject.getJSONObject("Location").put("suburb", suburb);
             System.out.println(jObject);
             System.out.println("--------------------------------");
-        }
-        catch (JSONException e)
-        {
+        } catch (JSONException e) {
             e.printStackTrace();
         }
         System.out.print("\n\n");
     }
 
-    @Test
-    public void CreateRondeboschLocation()
-    {
+    @Test(enabled = false)
+    public void CreateRondeboschLocation() {
+
         System.out.print("CreateRondeboschLocation");
-        System.out.print("\n"+currentTestData);
+        System.out.print("\n" + currentTestData);
         System.out.print("\n\n");
-
     }
-    @Test
-    public void CreateLocationWithOutStreetName()
-    {
+
+    @Test(enabled = false)
+    public void CreateLocationWithOutStreetName() {
+
         System.out.print("CreateLocationWithOutStreetName");
-        System.out.print("\n"+currentTestData);
+        System.out.print("\n" + currentTestData);
         System.out.print("\n\n");
-
     }
 
-    @Test
-    public void CreateWoodstockLocation()
-    {
+    @Test(enabled = false)
+    public void CreateWoodstockLocation() {
+
         System.out.print("This is the dummy test case 4");
-        System.out.print("\n"+currentTestData);
+        System.out.print("\n" + currentTestData);
         System.out.print("\n\n");
 
         String jsonBody = "{\n" +
@@ -91,19 +87,15 @@ public class SuperDemo extends EngineDriver
         String suburb = currentTestData.get("Suburb");
         String testcase = currentTestData.get("Test case");
 
-        try
-        {
-            JSONObject jObject  = new JSONObject(jsonBody);
-            jObject.put("Test case",testcase);
-            jObject.getJSONObject("Place").put("suburb",suburb);
+        try {
+            JSONObject jObject = new JSONObject(jsonBody);
+            jObject.put("Test case", testcase);
+            jObject.getJSONObject("Place").put("suburb", suburb);
             System.out.println(jObject);
             System.out.println("--------------------------------");
-        }
-        catch (JSONException e)
-        {
+        } catch (JSONException e) {
             e.printStackTrace();
         }
         System.out.print("\n\n");
     }
-
 }
