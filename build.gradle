@@ -3,7 +3,8 @@ buildscript {
         maven {
             url "https://plugins.gradle.org/m2/"
         }
-        mavenLocal()
+        mavenCentral()
+        //mavenLocal()
         jcenter()
     }
     dependencies {
@@ -189,8 +190,8 @@ task run_logistics(type: Test) {
         suiteName 'Logistics'
         filter {
 
-            includeTestsMatching "SuperDemo"
-            includeTestsMatching "DummyTest"
+            includeTestsMatching "Logistics.SuperDemo"
+            includeTestsMatching "Logistics.DummyTest"
 
         }
     }
