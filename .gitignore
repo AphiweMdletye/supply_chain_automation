@@ -19,7 +19,6 @@ supply_chain_automation/build/classes/java/
 supply_chain_automation/build/classes/java/
 build/reports/buildDashboard/*.html
 
-*.idea/
 *.gradle/
 #*.build/
 *.bin
@@ -36,7 +35,7 @@ build/*
 .DS_Store
 
 #IDEA Files
-.idea
+.idea/
 target
 *.iml
 *.ipr

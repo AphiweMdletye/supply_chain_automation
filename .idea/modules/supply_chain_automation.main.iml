@@ -5,14 +5,13 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../src">
       <sourceFolder url="file://$MODULE_DIR$/../../src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../src/main/resources" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-4.10-bin/bg6py687nqv2mbe6e1hdtk57h/gradle-4.10/lib/groovy-all-2.4.15.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/groovy-all-2.4.12.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -52,11 +51,11 @@
     <orderEntry type="library" name="Gradle: org.apache.xmlbeans:xmlbeans:3.0.2" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.commons:commons-compress:1.18" level="project" />
     <orderEntry type="library" name="Gradle: com.github.virtuald:curvesapi:1.05" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.4.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.4" level="project" />
     <orderEntry type="library" name="Gradle: ru.yandex.qatools.properties:properties-loader:1.4" level="project" />
+    <orderEntry type="library" name="Gradle: commons-io:commons-io:2.4" level="project" />
     <orderEntry type="library" name="Gradle: commons-beanutils:commons-beanutils-core:1.8.3" level="project" />
     <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.4" level="project" />
-    <orderEntry type="library" name="Gradle: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.4.4" level="project" />
   </component>
 </module>

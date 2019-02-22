@@ -14,7 +14,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-4.10-bin/bg6py687nqv2mbe6e1hdtk57h/gradle-4.10/lib/groovy-all-2.4.15.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/groovy-all-2.4.12.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -70,20 +70,20 @@
     <orderEntry type="library" name="Gradle: org.apiguardian:apiguardian-api:1.0.0" level="project" />
     <orderEntry type="library" name="Gradle: org.opentest4j:opentest4j:1.1.1" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.26" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.4.4" level="project" />
     <orderEntry type="library" name="Gradle: ru.yandex.qatools.properties:properties-loader:1.5" level="project" />
-    <orderEntry type="library" name="Gradle: commons-beanutils:commons-beanutils-core:1.8.3" level="project" />
-    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
     <orderEntry type="library" name="Gradle: org.aspectj:aspectjrt:1.7.4" level="project" />
+    <orderEntry type="library" name="Gradle: commons-beanutils:commons-beanutils-core:1.8.3" level="project" />
     <orderEntry type="library" name="Gradle: com.sun.xml.bind:jaxb-impl:2.2.7" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.tika:tika-core:1.5" level="project" />
     <orderEntry type="library" name="Gradle: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" name="Gradle: com.sun.xml.bind:jaxb-core:2.2.7" level="project" />
     <orderEntry type="library" name="Gradle: com.sun.xml.fastinfoset:FastInfoset:1.2.12" level="project" />
-    <orderEntry type="library" name="Gradle: org.jvnet.jaxb2_commons:jaxb2-basics-runtime:0.6.5" level="project" />
     <orderEntry type="library" name="Gradle: javax.xml.bind:jaxb-api:2.2.7" level="project" />
     <orderEntry type="library" name="Gradle: com.sun.istack:istack-commons-runtime:2.16" level="project" />
     <orderEntry type="library" name="Gradle: javax.xml.bind:jsr173_api:1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.4.4" level="project" />
+    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jvnet.jaxb2_commons:jaxb2-basics-runtime:0.6.5" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="supply_chain_automation.main" />
 </module>

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Logistics.supply_chain_automation.iml" filepath="$PROJECT_DIR$/.idea/modules/Logistics.supply_chain_automation.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/main.main.main.iml" filepath="$PROJECT_DIR$/.idea/modules/main.main.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/main.main.test.iml" filepath="$PROJECT_DIR$/.idea/modules/main.main.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/supply_chain_automation.iml" filepath="$PROJECT_DIR$/.idea/modules/supply_chain_automation.iml" />
       <module fileurl="file://$PROJECT_DIR$/supply_chain_automation.iml" filepath="$PROJECT_DIR$/supply_chain_automation.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/supply_chain_automation.main.iml" filepath="$PROJECT_DIR$/.idea/modules/supply_chain_automation.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/supply_chain_automation.test.iml" filepath="$PROJECT_DIR$/.idea/modules/supply_chain_automation.test.iml" />
