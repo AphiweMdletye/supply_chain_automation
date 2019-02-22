@@ -16,7 +16,6 @@ import io.restassured.specification.ResponseSpecification;
 import main.Config.GlobalEnums;
 import main.Utils.ExcelUtility;
 import org.apache.log4j.PropertyConfigurator;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import java.io.IOException;
@@ -57,7 +56,7 @@ public class EngineDriver {
     public static final int CLIENT_ID_TAKEALOT = 3;
 
     @BeforeClass
-    public void startEngine() throws IOException, InvalidFormatException {
+    public void startEngine() throws IOException {
 
         excelData = ExcelUtility.ReadExcelFile("Locations");
 
