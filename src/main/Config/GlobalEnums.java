@@ -9,9 +9,9 @@ public class GlobalEnums {
 
     public enum Environment {
 
-        TAKEALOT("https://uat-api2.mrdcourier.com","/api/","3", "takealot"),
-        MrD("https://uat-api2-food.mrdcourier.com","/api/","1","mrD"),
-        SUPERBALIST("","2","/api/","superbalist");
+        MrD("https://uat-api2-food.mrdcourier.com", "/api/", "1", "mrD"),
+        SUPERBALIST("https://uat-api2.mrdcourier.com", "/api/", "2", "superbalist"),
+        TAKEALOT("https://uat-api2.mrdcourier.com", "/api/", "3", "takealot");
 
         public final String base_Url, path, port, environmentName;
 

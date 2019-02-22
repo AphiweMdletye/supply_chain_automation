@@ -32,8 +32,8 @@ public class DummyTest extends EngineDriver {
                     "        \"complexDetails\": \"created under client 2 home \"\n" +
                     "    }";
 
-    String uri = "clients/" + GENERAL + "/locations";
-//    String uri = "clients/" + env.port + "/locations";
+//    String uri = "clients/" + GENERAL + "/locations";
+    String uri = "clients/" + env.port + "/locations";
 
     /**
      * This function is to create ID locations

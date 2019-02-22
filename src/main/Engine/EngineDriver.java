@@ -6,7 +6,6 @@ package main.Engine;
  */
 
 //import io.qameta.allure.restassured.AllureRestAssured;
-import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -76,7 +75,7 @@ public class EngineDriver {
         builder = new RequestSpecBuilder();
         respec = new ResponseSpecBuilder();
 
-        builder.addFilter(new AllureRestAssured());//To setup Filter that gonna attach Request/Response logs to report
+//        builder.addFilter(new AllureRestAssured());//To setup Filter that gonna attach Request/Response logs to report
         respec.expectResponseTime(lessThan(10L), TimeUnit.SECONDS);
 
         requestSpec = builder.build();
