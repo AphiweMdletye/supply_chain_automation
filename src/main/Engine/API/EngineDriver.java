@@ -1,4 +1,4 @@
-package main.Engine;
+package main.Engine.API;
 
 /**
  * @author chris
@@ -108,25 +108,6 @@ public class EngineDriver {
         return currentTestData;
     }
 
-    public static RequestSpecification requestHeaders() {
-
-        RequestSpecification headers = null;
-
-        builder = new RequestSpecBuilder();
-        respec = new ResponseSpecBuilder();
-
-        builder.addHeader("authorization", authorization);
-        builder.addHeader("postman-token", postmanToken);
-        builder.addHeader("content-type", contentType);
-        builder.addHeader("cache-control", cacheControl);
-        respec.expectHeader("content-type", contentType);
-
-        headers = builder.build();
-        responseSpec = respec.build();
-
-        return headers;
-    }
-
     public ValidatableResponse postMethod(String payload, String endpoint, RequestSpecification header) {
 
         response =
@@ -135,10 +116,25 @@ public class EngineDriver {
                         spec(header).
                         body(payload).
                         log().all().
-                        when().
+                when().
                         post(endpoint).
-                        then().
+                then().
                         log().all();
         return response;
     }
+
+//    public ValidatableResponse postMethod1(String payload, String endpoint, Map header) {
+//
+//        response =
+//                given().
+//                        spec(requestSpec).
+//                        params(header).
+//                        body(payload).
+//                        log().all().
+//                when().
+//                        post(endpoint).
+//                then().
+//                        log().all();
+//        return response;
+//    }
 }
