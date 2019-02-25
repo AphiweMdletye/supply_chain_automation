@@ -7,12 +7,14 @@ package Logistics;
 
 import io.restassured.response.ValidatableResponse;
 import main.Config.GlobalEnums;
-import main.Engine.EngineDriver;
+import main.Engine.API.EngineDriver;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Description;
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
 import java.io.IOException;
+import static main.Engine.API.CustomHeaders.buildCustomHeaders1;
+import static main.Engine.API.CustomHeaders.requestHeaders_Tal;
 
 public class DummyTest extends EngineDriver {
 
@@ -31,7 +33,6 @@ public class DummyTest extends EngineDriver {
                     "        \"complexDetails\": \"created under client 2 home \"\n" +
                     "    }";
 
-//    String uri = "clients/" + GENERAL + "/locations";
     String uri = "clients/" + env.port + "/locations";
 
     /**
@@ -43,7 +44,8 @@ public class DummyTest extends EngineDriver {
     @Test(groups = {"LOG"}, enabled = true)
     public void Post_Create_LocationID_Test_201() throws IOException {
 
-        ValidatableResponse vr = postMethod(payload, uri, requestHeaders());
+        ValidatableResponse vr = postMethod(payload, uri, requestHeaders_Tal());
+//        ValidatableResponse vr = postMethod1(payload, uri, buildCustomHeaders1("authorization", authorization));
 
         //Validate Response
         vr.assertThat().statusCode(201);
