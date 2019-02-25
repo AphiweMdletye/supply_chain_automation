@@ -55,8 +55,7 @@ public class CustomHeaders {
 
         RequestSpecification headers = null;
 
-        builder = new RequestSpecBuilder();
-        respec = new ResponseSpecBuilder();
+        builder = new RequestSpecBuilder(); 
 
         builder.addHeader("authorization", authorization);
         builder.addHeader("postman-token", postmanToken);
@@ -65,7 +64,6 @@ public class CustomHeaders {
         respec.expectHeader("content-type", contentType);
 
         headers = builder.build();
-        responseSpec = respec.build();
 
         return headers;
     }
