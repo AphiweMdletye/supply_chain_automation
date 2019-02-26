@@ -1,41 +1,22 @@
-#My ignored files
-.gradle/4.10/fileHashes/fileHashes.lock
-.gradle/4.10/fileContent/fileContent.lock
-.gradle/4.10/fileHashes/fileHashes.bin
-.gradle/4.10/fileContent/fileContent.lock
-.gradle/4.10/fileHashes/fileHashes.bin
-.gradle/
-*.bin
-*.lock
-.idea/workspace.xml
-**/build/
-build/
 
-supply_chain_automation/allure-report/
-supply_chain_automation/build/allure-results/
-supply_chain_automation/build/reports/
-supply_chain_automation/build/test-results/
-supply_chain_automation/build/classes/java/
-supply_chain_automation/build/classes/java/
-build/reports/buildDashboard/*.html
-
-*.idea/
-*.gradle/
-#*.build/
-*.bin
+# My ignored files
+.idea/*
+*.iml
+.idea/*
 build/*
-*.class
-*.idx
+*.bin
+.gradle/*
 *.lock
-*.css
-*.log
-*.xml
-*.jar
-
-#Mac OS stuff
+*.class
+*.html
+*idx
+allure-report/*
+target/*
+.idea/workspace.xml
+# Mac OS stuff
 .DS_Store
 
-#IDEA Files
+# IDEA Files
 .idea
 target
 *.iml
@@ -46,3 +27,36 @@ schema
 out/
 .idea/workspace.xml
 .idea/modules/supply_chain_automation.main.iml
+.gradle/4.10/fileContent/fileContent.lock
+.gradle/4.10/fileContent/fileContent.lock
+.gradle/4.10/javaCompile/jarAnalysis.bin
+.gradle/4.10/javaCompile/classAnalysis.bin
+.gradle/4.10/fileHashes/resourceHashesCache.bin
+.gradle/4.10/javaCompile/taskHistory.bin
+.gradle/4.10/taskHistory/taskHistory.bin
+.gradle/4.10/taskHistory/taskHistory.lock
+.gradle/4.10/javaCompile/taskHistory.bin
+.gradle/4.10/javaCompile/taskHistory.bin
+.gradle/4.10/fileContent/fileContent.lock
+.gradle/4.10/fileHashes/fileHashes.bin
+.gradle/4.10/fileHashes/fileHashes.lock
+.gradle/4.10/fileHashes/resourceHashesCache.bin
+.gradle/4.10/javaCompile/classAnalysis.bin
+.gradle/4.10/javaCompile/jarAnalysis.bin
+.gradle/4.10/javaCompile/javaCompile.lock
+.gradle/4.10/javaCompile/taskHistory.bin
+.gradle/4.10/taskHistory/taskHistory.bin
+.gradle/4.10/taskHistory/taskHistory.lock
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.gradle/buildOutputCleanup/outputFiles.bin
+build/classes/java/test/Logistics/SenerityDemo.class
+build/classes/java/main/Utils/ExcelUtility.class
+build/classes/java/main/Engine/EngineDriver.class
+build/classes/java/main/Logistics/SenerityDemo.class
+build/classes/java/main/Utils/ExcelUtility.class
+build/classes/java/test/Logistics/SenerityDemo.class
+build/test-results/run_logistics/binary/output.bin
+build/test-results/run_logistics/binary/output.bin
+build/test-results/run_logistics/binary/output.bin
+.idea/vcs.xml
+
