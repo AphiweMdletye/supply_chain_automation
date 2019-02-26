@@ -1,18 +1,11 @@
-//{
-//  "Test case": "name",
-//  "Location": {
-//    "suburb": "test"
-//  }
-//}
-
 {
-  "Test case": "name",
-  "Location": [
-    {
-      "Place":
-      {
-        "suburb": "test"
-      }
-    }
-  ]
+  "street": "36 Dahlia Street",
+  "postalCode": "7441",
+  "suburb": "Dunoon",
+  "province": "Western Cape",
+  "city": "Cape Town",
+  "countryCode": "ZA",
+  "addressType": "RESIDENTIAL",
+  "businessName": "Business",
+  "complexDetails": "Flat"
 }

@@ -120,9 +120,14 @@ dependencies {
     compile group: 'io.appium', name: 'java-client', version: '6.1.0' //Works with Appium
 
     //JSON
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
     compile group: 'org.json', name: 'json', version: '20170516'
     compile 'com.googlecode.json-simple:json-simple:1.1.1'
     compile 'org.json:json:20140107'
+
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+    compile group: 'org.immutables', name: 'gson', version: '2.7.5'
 
     //Jackson Databind
     compile 'com.fasterxml.jackson.core:jackson-databind:2.8.6'
@@ -153,13 +158,13 @@ dependencies {
     compile 'org.testng:testng:6.11'
     compile 'org.assertj:assertj-core:3.8.0'
     compile 'io.rest-assured:rest-assured:3.0.3'
-    compile group: 'org.json', name: 'json', version: '20170516'
-    compile 'com.googlecode.json-simple:json-simple:1.1.1'
+//    compile group: 'org.json', name: 'json', version: '20170516'
+//    compile 'com.googlecode.json-simple:json-simple:1.1.1'
     compile 'org.apache.httpcomponents:httpclient:4.3.1'
     compile 'org.apache.commons:commons-exec:1.0.1+'
     compile 'org.apache.directory.studio:org.apache.commons.lang:2.6+'
     compile 'org.apache.directory.studio:org.apache.commons.codec:1.8+'
-    compile 'org.json:json:20140107'
+//    compile 'org.json:json:20140107'
     compile 'ru.yandex.qatools.allure:allure-java-annotations:1.3.9'
     testCompile "com.google.code.gson:gson:2.2.4"
     testCompile group: 'com.jayway.restassured', name: 'rest-assured', version: '1.6'
@@ -173,6 +178,10 @@ dependencies {
     compile group: 'org.apache.poi', name: 'poi', version: '4.0.1'
     compile group: 'org.apache.poi', name: 'poi-ooxml-schemas', version: '4.0.1'
     compile group: 'org.apache.poi', name: 'poi-ooxml', version: '4.0.1'
+    compile group: 'org.python', name: 'jython', version: '2.7.1b3'
+
+//    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+//    compile 'org.json:json:20140107'
 
     testCompile 'org.assertj:assertj-core:3.4+'
     testCompile 'org.slf4j:slf4j-simple:1.7+'
