@@ -1,3 +1,4 @@
+
 # My ignored files
 .idea/*
 *.iml
@@ -24,7 +25,6 @@ build
 schema
 .gradle
 out/
-
 .idea/workspace.xml
 .idea/modules/supply_chain_automation.main.iml
 .gradle/4.10/fileContent/fileContent.lock
@@ -59,3 +59,4 @@ build/test-results/run_logistics/binary/output.bin
 build/test-results/run_logistics/binary/output.bin
 build/test-results/run_logistics/binary/output.bin
 .idea/vcs.xml
+
