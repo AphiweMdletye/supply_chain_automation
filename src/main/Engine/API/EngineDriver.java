@@ -108,12 +108,13 @@ public class EngineDriver {
         return currentTestData;
     }
 
-    public ValidatableResponse postMethod(String payload, String endpoint, RequestSpecification header) {
+    //POST method
+    public ValidatableResponse postMethod(String payload, String endpoint, Map header) {
 
         response =
                 given().
                         spec(requestSpec).
-                        spec(header).
+                        headers(header).
                         body(payload).
                         log().all().
                 when().
@@ -122,19 +123,4 @@ public class EngineDriver {
                         log().all();
         return response;
     }
-
-//    public ValidatableResponse postMethod1(String payload, String endpoint, Map header) {
-//
-//        response =
-//                given().
-//                        spec(requestSpec).
-//                        params(header).
-//                        body(payload).
-//                        log().all().
-//                when().
-//                        post(endpoint).
-//                then().
-//                        log().all();
-//        return response;
-//    }
 }

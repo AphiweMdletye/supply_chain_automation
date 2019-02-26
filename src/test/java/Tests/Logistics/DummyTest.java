@@ -8,17 +8,21 @@ package Logistics;
 import io.restassured.response.ValidatableResponse;
 import main.Config.GlobalEnums;
 import main.Engine.API.EngineDriver;
+import main.Utils.API.PropertyFileReader;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Description;
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
 import java.io.IOException;
-import static main.Engine.API.CustomHeaders.buildCustomHeaders1;
-import static main.Engine.API.CustomHeaders.requestHeaders_Tal;
+import java.io.InputStream;
+import java.util.Properties;
+
+import static main.Engine.API.CustomHeaders.*;
 
 public class DummyTest extends EngineDriver {
 
     GlobalEnums.Environment env = GlobalEnums.Environment.TAKEALOT;
+    PropertyFileReader prop = new PropertyFileReader();
 
     //Payload
     String payload = "{\n" +
@@ -33,7 +37,7 @@ public class DummyTest extends EngineDriver {
                     "        \"complexDetails\": \"created under client 2 home \"\n" +
                     "    }";
 
-    String uri = "clients/" + env.port + "/locations";
+    String uri = prop.returnPropVal("create_location_uri");
 
     /**
      * This function is to create ID locations
@@ -44,8 +48,9 @@ public class DummyTest extends EngineDriver {
     @Test(groups = {"LOG"}, enabled = true)
     public void Post_Create_LocationID_Test_201() throws IOException {
 
-        ValidatableResponse vr = postMethod(payload, uri, requestHeaders_Tal());
-//        ValidatableResponse vr = postMethod1(payload, uri, buildCustomHeaders1("authorization", authorization));
+        buildCustomHeaders();
+        buildCustomHeaders("authorization", authorization);
+        ValidatableResponse vr = postMethod(payload, uri, customHeadersMap);
 
         //Validate Response
         vr.assertThat().statusCode(201);

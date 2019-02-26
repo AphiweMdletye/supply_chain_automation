@@ -31,7 +31,7 @@ public class CustomHeaders {
     }
 
     //This method allow you add header to headersMaps
-    public static Map buildCustomHeaders1(String headerKey, String headerValue) {
+    public static Map buildCustomHeaders1(String headerKey, String headerValue) { //TODO delete
 
         // Adding key-value pairs to a HashMap
         customHeadersMap.put(headerKey, headerValue);
@@ -50,6 +50,34 @@ public class CustomHeaders {
         customHeadersMap.put("content-type", contentType);
     }
 
+    public static Map buildCustomHeaders1() { //TODO delete
+
+        // Adding key-value pairs to a HashMap
+        customHeadersMap.put("authorization", authorization);
+        customHeadersMap.put("postman-token", postmanToken);
+        customHeadersMap.put("content-type", contentType);
+        customHeadersMap.put("cache-control", cacheControl);
+        customHeadersMap.put("content-type", contentType);
+
+        return customHeadersMap;
+    }
+
+    //before
+//
+//    //need add method clear map
+//
+//
+//    //build header map
+//     for (5){
+//
+//         if 1:1
+//        customHeadersMap.put("1", "2");
+//
+//         if i:2
+//        customHeadersMap.put("2", "2");
+//    }
+
+
     //Hard code header could be done in this method
     public static RequestSpecification requestHeaders_Tal() {
 
@@ -62,6 +90,18 @@ public class CustomHeaders {
         builder.addHeader("content-type", contentType);
         builder.addHeader("cache-control", cacheControl);
         respec.expectHeader("content-type", contentType);
+
+        headers = builder.build();
+
+        return headers;
+    }
+
+    public static RequestSpecification requestHeaders_Tal(String headerKey, String headerValue) {
+
+        RequestSpecification headers = null;
+        builder = new RequestSpecBuilder();
+
+        builder.addHeader(headerKey, headerValue);
 
         headers = builder.build();
 
